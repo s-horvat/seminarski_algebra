@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      type="text/javascript"
+      src="https://cdn.scaledrone.com/scaledrone.min.js"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>ChatAPP</title>
+  </head>
+
+  <body>
+    <h1 class="heading">ChatAPP</h1>
+
+    <div class="members"></div>
+    <div class="messages"></div>
+
+    <form class="messageForm" onsubmit="return false;">
+      <input
+        class="messageFormInput"
+        id="input-field"
+        placeholder="Write something..."
+        type="text"
+        maxlength="500"
+      />
+
+      <button class="messageFormButton" id="sendBtn" type="submit" value="send">
+        <img src="./art/enter.png" alt="Send" id="enterBtn" />
+      </button>
+    </form>
+
+    <!-- modal for exceeding character number -->
+    <div class="modal-error"></div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

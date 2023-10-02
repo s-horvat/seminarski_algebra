@@ -1,0 +1,14 @@
+@mixin mediaquerymix {
+  h1 {
+    font-size: 2em;
+    margin: 0.5em 0 0.5em 0;
+  }
+
+  .message_text {
+    font-size: 1.4em;
+  }
+
+  #brushstroke {
+    width: 2.5em;
+  }
+}
